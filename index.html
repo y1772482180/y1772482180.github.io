@@ -91,17 +91,17 @@
 <blockquote>
 <p>J. Long, E. Shelhamer, and T. Darrell, “Fully convolutional networks for semantic segmentation,” arXiv preprint arXiv:1411.4038,2014.</p>
 </blockquote>
-<p><img src="C:\Users\17724\AppData\Roaming\Typora\typora-user-images\image-20241014144133806.png" alt="image-20241014144133806"></p>
+<p><img src="/image%5Cimage-20241014144133806.png" alt="image-20241014144133806"></p>
 <p>图1 Fully Convolutional Networks结构图</p>
 <p>Ronneberger等人受到fcn架构和编码器-解码器模型的启发，开发了U-Net生物医学图像分割模型。</p>
 <blockquote>
 <p>O. Ronneberger, P. Fischer, and T. Brox, “U-net: Convolutional networks for biomedical image segmentation,” in International Conference on Medical image computing and computer-assisted intervention. Springer, 2015, pp. 234–241.</p>
 </blockquote>
-<p><img src="C:\Users\17724\AppData\Roaming\Typora\typora-user-images\image-20241014144511211.png" alt="image-20241014144511211"></p>
+<p><img src="/image%5Cimage-20241014144511211.png" alt="image-20241014144511211"></p>
 <p>图2 U-net结构图</p>
 <p>U-Net网络由两部分组成。第一部分是收缩路径，它使用包含若干卷积块的下采样模块来提取语义和上下文特征。第二部分是扩展路径，它应用一系列配备上采样操作的卷积块，逐步增加特征图的空间分辨率，通常每次增加两倍，同时减少特征维度，以产生像素级别的分类得分。U-Net中最重要和显著的部分是跳跃连接，它们将收缩路径中每个阶段的输出复制到扩展路径中相应阶段。 这样的网络可以从很少的图像中进行端到端训练</p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>本研究对unet做出了复现并做了一个UI界面,项目结构如下</p>
-<p><img src="C:\Users\17724\AppData\Roaming\Typora\typora-user-images\image-20241014152854603.png" alt="image-20241014152854603"></p>
+<p><img src="/image%5Cimage-20241014152854603.png" alt="image-20241014152854603"></p>
 <p>模型结构如上图二所示</p>
 <p>第4章，功能模块的分析和代码介绍；第5章，软件功能演示。</p>
 
